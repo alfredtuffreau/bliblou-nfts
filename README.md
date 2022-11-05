@@ -12,10 +12,16 @@ npx hardhat node
 npx hardhat run scripts/deploy.js
 ```
 
+
 Recipes on Goerli 0x2af7134e7Ae3bAA96cFd673b891b82b9F6b1BCE0
+
 Recipes with __gap on Goerli 0x6C5967D8ED0eBFa57d604a5f8a0Fbb38C68449D0
 
+
 Test `npx hardhat test`
-Deploy `npx hardhat run --network goerli scripts/deploy.js`
-Mint `npx hardhat mintRecipe --network goerli <recipe_uuid> <to>`
-Get `npx hardhat getRecipe --network goerli <token_id>`
+
+Deploy `npx hardhat run scripts/deploy.js --network goerli`
+
+Mint `npx hardhat mintRecipe <recipe_uuid> <to> --network goerli`
+
+Get `npx hardhat getRecipe <token_id> --network goerli`
